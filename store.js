@@ -7,3 +7,7 @@ export function adicionar(valor){
 export function getItens(){
     return [...store.estado];
 }
+
+export function popItens(){
+    store.estado.pop();
+}

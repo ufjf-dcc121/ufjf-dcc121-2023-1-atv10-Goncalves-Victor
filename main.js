@@ -1,7 +1,9 @@
-import {adicionar, getItens} from "./store.js";
+import {adicionar, getItens, popItens} from "./store.js";
 
 const form = document.forms.entrada;
 form.addEventListener('submit', envia);
+
+form.remover.addEventListener('click',remove);
 
 
 atualiza();
@@ -26,4 +28,10 @@ function atualiza(){
         ol.appendChild(li);
         
     }
+}
+
+function remove(){
+    popItens();
+    atualiza();
+    
 }
