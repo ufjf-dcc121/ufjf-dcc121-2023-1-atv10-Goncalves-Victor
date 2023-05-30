@@ -10,6 +10,7 @@ function envia(event){
 }
 
 let estado=0;
+atualiza();
 
 function atualiza(){
     const ol = document.querySelector('ol');
